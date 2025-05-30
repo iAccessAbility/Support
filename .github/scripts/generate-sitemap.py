@@ -5,6 +5,7 @@ from datetime import datetime
 BASE_URL = "https://support.iaccessabilityservices.com"
 
 EXCLUDE_PATHS = {
+    "404.html",
     # in developmet
     "html/service.html",
     "html/service-form.html"

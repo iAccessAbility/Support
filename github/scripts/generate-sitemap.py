@@ -2,7 +2,7 @@ import os
 from datetime import datetime
 
 # Configuration
-BASE_URL = "https://iaccessabilityservices.com"
+BASE_URL = "https://support.iaccessabilityservices.com"
 
 EXCLUDE_PATHS = {
     # in developmet

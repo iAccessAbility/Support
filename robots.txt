@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /html/services.html
+Disallow: /html/services-form.html
+Allow: /
+
+Sitemap: https://support.iaccessabilityservices.com/sitemap.xml

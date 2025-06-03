@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Leah Dykema">
+        <meta name="description" content="Learn how to setup and use Zoom on Apple Watch.">
+        <meta name="theme-color" content="#eee" id="theme-color-meta">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:image" name="image" content="https://iaccessabilityservices.com/img/favicon.png">
+        <meta property="og:title" content="Getting Started with Zoom for Apple Watch - iAccessAbility">
+        <meta property="og:description" content="Learn how to setup and use Zoom on Apple Watch.">
+        <meta property="og:url" content="https://support.iaccessabilityservices.com/articles/getting-started-with-zoom-for-apple-watch.html">
+        <meta property="og:type" content="website">
+        <link rel="shortcut icon" type="image/x-icon" href="https://support.iaccessabilityservices.com/media/favicon.ico">
+        <link rel="apple-touch-icon" type="image/x-icon" href="https://support.iaccessabilityservices.com/media/favicon.png">
+        <link rel="apple-touch-icon" type="image/png" sizes="16x16" href="https://support.iaccessabilityservices.com/media/favicon.ico">
+        <link rel="apple-touch-icon" type="image/png" sizes="32x32" href="https://support.iaccessabilityservices.com/media/favicon.ico">
+        <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="https://support.iaccessabilityservices.com/media/favicon.ico">
+        <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="https://support.iaccessabilityservices.com/media/favicon.ico">
+        <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="https://support.iaccessabilityservices.com/media/favicon.png">
+        <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="https://support.iaccessabilityservices.com/media/favicon.png">
+        <link rel="apple-touch-icon" type="image/png" sizes="167x167" href="https://support.iaccessabilityservices.com/media/favicon.png">
+        <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="https://support.iaccessabilityservices.com/media/favicon.png">
+        <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="https://support.iaccessabilityservices.com/media/favicon.png">
+        <link rel="apple-touch-icon" type="image/png" sizes="256x256" href="https://support.iaccessabilityservices.com/media/favicon.png">
+        <link rel="apple-touch-icon" type="image/png" sizes="512x512" href="https://support.iaccessabilityservices.com/media/favicon.png">
+        <title>Getting Started with Zoom for Apple Watch - iAccessAbility</title>
+        <link rel="stylesheet" href="/stylesheets/articles.css">
+        <link rel="stylesheet" href="https://iaccessabilityservices.com/stylesheets/accessibility.css">
+        <link rel="stylesheet" href="https://iaccessabilityservices.com/navbar/navbar.css">
+        <link rel="manifest" href="https://iaccessabilityservices.com/manifest.json">
+    </head>
+    <body>
+        <!-- Navigation -->
+        <div class="nav-container" data-role="header" data-position="fixed">
+            <!-- Normal Navigation -->
+            <nav id="main-navbar">
+                <!-- Top row: menu button on left, logo on right -->
+                <div class="mobile-header">
+                    <!-- iAccessAbility -->
+                    <div class="logo-container">
+                        <a href="https://iaccessabilityservices.com" aria-label="Home"><img class="link-logo" src="https://iaccessabilityservices.com/img/logo-colored.svg" alt="I Access Ability"></a>
+                        <a href="https://iaccessabilityservices.com" class="links"><h1 class="name" aria-label="I Access Ability">iAccessAbility</h1></a>
+                    </div>
+                    <!-- Mobile Menu Toggle Button -->
+                    <button class="menu-toggle" aria-expanded="false" aria-label="Toggle menu">
+                        <span class="menu-icon-container">
+                            <span class="menu-line"></span>
+                            <span class="menu-line"></span>
+                        </span>
+                    </button>
+                </div>
+                <!-- Desktop Navigation -->
+                <ul class="desktop-nav">
+                    <li><a href="https://iaccessabilityservices.com"><img class="link-logo" src="https://iaccessabilityservices.com/img/logo-colored.svg" alt="I Access Ability"></a></li>
+                    <li><a href="https://iaccessabilityservices.com/news/">News</a></li>
+                    <li><a href="https://iaccessabilityservices.com/blog/">Blog</a></li>
+                    <li><a href="https://iaccessabilityservices.com/html/recommendations.html">Recommendations</a></li>
+                    <li><a href="https://support.iaccessabilityservices.com">Support</a></li>
+                    <li><a href="https://iaccessabilityservices.com/html/about.html">About</a></li>
+                    <li><a href="https://iaccessabilityservices.com/html/connect.html">Connect</a></li>
+                </ul>
+                <!-- Mobile Navigation (initially hidden) -->
+                <ul id="mobile-menu" class="mobile-nav" aria-hidden="true">
+                    <li><a href="https://iaccessabilityservices.com" tabindex="-1">Home</a></li>
+                    <li><a href="https://iaccessabilityservices.com/news/" tabindex="-1">News</a></li>
+                    <li><a href="https://iaccessabilityservices.com/blog/" tabindex="-1">Blog</a></li>
+                    <li><a href="https://iaccessabilityservices.com/html/recommendations.html" tabindex="-1">Recommendations</a></li>
+                    <li><a href="https://support.iaccessabilityservices.com" tabindex="-1">Support</a></li>
+                    <li><a href="https://iaccessabilityservices.com/html/about.html" tabindex="-1">About</a></li>
+                    <li><a href="https://iaccessabilityservices.com/html/connect.html" tabindex="-1">Connect</a></li>
+                </ul>
+            </nav>
+            <!-- PWA Navigation -->
+            <nav id="pwa-navbar" style="display: none;">
+                <!-- Top row: menu button on left, logo on right -->
+                <div class="mobile-header">
+                    <!-- iAccessAbility -->
+                    <div class="logo-container">
+                        <a href="https://support.iaccessabilityservices.com/html/support-articles.html" aria-label="Home"><img class="link-logo" src="https://iaccessabilityservices.com/img/logo-colored.svg" alt="I Access Ability"></a>
+                        <a href="https://support.iaccessabilityservices.com/html/support-articles.html" class="links"><h1 class="name" aria-label="I Access Ability">iAccessAbility</h1></a>
+                    </div>
+                </div>
+                <!-- Desktop Navigation -->
+                <ul class="desktop-nav">
+                    <li><a href="https://support.iaccessabilityservices.com/html/support-articles.html"><img class="link-logo" src="https://iaccessabilityservices.com/img/logo-colored.svg" alt="I Access Ability"></a></li>
+                    <li><a href="https://support.iaccessabilityservices.com/html/support-articles.html">Support Articles</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Getting Started with the Accessibility Zoom Feature for iOS Article -->
+        <main class="site">
+            <!-- Title -->
+            <h1>Getting Started with the Accessibility Zoom Feature for Apple Watch</h1>
+            <p>The Zoom feature on Apple Watch allows a user to magnify anything on the display no matter what you are viewing&#46; This article will go over how to setup&#44; enable&#44; use&#44; and disable Zoom&#46;</p>
+            <hr aria-hidden="true" tabindex="-1"><br>
+            <!-- Section 1 -->
+            <h2>Locate and Enable</h2>
+            <div class="img-and-text">
+                <ol class="instructions-list">
+                    <li class="article-instructions">Open Settings</li>
+                    <li class="article-instructions">Tap Accessibility</li>
+                    <li class="article-instructions">Tap Zoom</li>
+                    <li class="article-instructions">Enable Zoom</li>
+                </ol>
+            </div>
+            <hr aria-hidden="true" tabindex="-1"><br>
+            <!-- Section 2 -->
+            <h2>Use Zoom</h2>
+            <div class="img-and-text">
+                <ul class="instructions-list">
+                    <li class="article-instructions">Double&#45;tap the screen with two figners to zoom in and out</li>
+                    <li class="article-instructions">Double&#45;tap and swipe up and down with two fingers to adjust the magnification&#46;</li>
+                    <li class="article-instructions">Drag with two fingers around the screen to move the magnification window around&#46;</li>
+                    <li class="article-instructions">Tap once with two fingers to switch the Digital Crown between panning with Zoom and normal use&#46;</li>
+                </ul>
+            </div>
+            <hr aria-hidden="true" tabindex="-1"><br>
+            <!-- Section 3 -->
+            <h2>Zoom Settings</h2>
+            <p>There are a couple settings you can adjust for Zoom listed and explained below&#58;</p>
+            <div class="img-and-text">
+                <ul class="instructions-list">
+                    <li class="article-instructions"><b>Maximum Zoom Level</b>&#58; Set the max magnification you can perform with Zoom&#46;</li>
+                    <li class="article-instructions"><a class="links" href="#handgestures" tabindex="0"><b>Hand Gestures</b></a>&#58; Use Zoom with Hand Gestures instead of directly tapping and swiping on the display&#46; Learn how to set it up below&#46;</li>
+                </ul>
+            </div>
+            <hr aria-hidden="true" tabindex="-1"><br>
+            <!-- Subsection 1 -->
+            <h3 id="handgestures">Setup Hand Gestures</h3>
+            <div class="img-and-text">
+                <ol class="instructions-list">
+                    <li class="article-instructions">Open Settings</li>
+                    <li class="article-instructions">Tap Accessibillity</li>
+                    <li class="article-instructions">Tap Zoom</li>
+                    <li class="article-instructions">Tap Hand Gestures</li>
+                    <li class="article-instructions">Set the various gestures to Zoom actions&#46;</li>
+                    <li class="article-instructions">Enable Hand Gestures
+                    </li>
+                </ol>
+            </div>
+            <p class="info">The normal gestures still work when Hand Gestures are enabled&#46;</p>
+            <p class="info">Note that on supported models&#44; the universal double&#45;tap gesture is unavailable when Hand Gestures is enabled for Zoom&#46;</p>
+            <hr aria-hidden="true" tabindex="-1"><br>
+            <p class="info">You can setup Accessibility Shortcut to quickly and easily toggle on Zoom or other Accessibility features&#46; Learn how to setup Accessibility Shortcut here&#58; <a class="links" href="accessibility-shortcut-apple-watch.html" tabindex="0">Setup and Use Accessbility Shortcut &gt;</a></p>
+            <!-- Bottom Nav -->
+            <hr aria-hidden="true" tabindex="-1"><br>
+            <div class="bottom-nav">
+                <p><a class="nav-link" href="/html/support.html" tabindex="0">Support</a></p>
+                <p aria-hidden="true">&#124;</p>
+                <p><a class="nav-link" href="/html/support-articles.html" tabindex="0">Support Articles</a></p>
+            </div>
+            <!-- Disclaimer/Reference/detail Section -->
+            <div class="disclaimer-section">
+                <p class="info">Last updated&#58; June 3&#44; 2025</p>
+                <p class="info">Reference the original support article by Apple here&#58; <a class="links" href="https://support.apple.com/guide/watch/zoom-apd95f904443/watchos#:~:text=Go%20to%20the%20Settings%20app,Zoom%2C%20then%20turn%20on%20Zoom." tabindex="0">Use Zoom on Apple Watch &#45; Apple Support</a></p>
+                <p class="info">All references to Apple Inc&#46; and their products and services are trade&#45;marked and are used in these articles for educational purposes&#46;</p>
+            </div>
+        </main>
+        <script src="https://iaccessabilityservices.com/javascript/screen-reader-support.js"></script>
+        <script src="https://iaccessabilityservices.com/navbar/navbar.js"></script>
+        <script src="https://iaccessabilityservices.com/javascript/pwa.js"></script>
+        <script src="/javascripts/article-animation.js"></script>
+    </body>
+</html>

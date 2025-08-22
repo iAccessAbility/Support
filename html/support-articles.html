@@ -80,6 +80,11 @@
             <!-- title -->
             <h1>Support Articles</h1>
             <h2>Find answers to common questions and issues in our suppport articles.</h2>
+            <!-- Search -->
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Search articles...">
+                <ul id="results"></ul>
+            </div>
             <!-- Troubleshooting -->
             <h3>Troubleshooting</h3>
             <!-- iOS -->
@@ -176,5 +181,43 @@
         <script src="https://iaccessabilityservices.com/javascript/screen-reader-support.js"></script>
         <script src="https://iaccessabilityservices.com/navbar/navbar.js"></script>
         <script src="https://iaccessabilityservices.com/javascript/pwa.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+        <script>
+            fetch('../articles.json')
+                .then(res => res.json())
+                .then(data => {
+                    const options = {
+                        keys: ['title', 'category', 'description'],
+                        threshold: 0.3
+                    };
+                    const fuse = new Fuse(data, options);
+                    const input = document.getElementById('search');
+                    const resultsList = document.getElementById('results');
+                    resultsList.style.display = "none";
+
+                    input.addEventListener('input', () => {
+                        const query = input.value.trim();
+                        const results = fuse.search(query);
+
+                        resultsList.innerHTML = '';
+
+                        if (results.length > 0 && query !== "") {
+                            resultsList.style.display = "block";
+                            results.slice(0, 5).forEach(result => {
+                            const li = document.createElement('li');
+                            li.innerHTML = `
+                                <a href="${result.item.url}">
+                                    <strong>${result.item.title}</strong><br>
+                                    <small>${result.item.description || ''}</small>
+                                </a>
+                            `;
+                            resultsList.appendChild(li);
+                        });
+                    } else {
+                        resultsList.style.display = "none";
+                    }
+                });
+            });
+        </script>
     </body>
 </html>

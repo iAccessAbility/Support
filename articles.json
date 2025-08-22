@@ -1,0 +1,248 @@
+[
+    {
+        "title": "Restart iPhone",
+        "description": "In this article, we will go over how to force restart your iPhone.",
+        "url": "https://support.iaccessabilityservices.com/articles/restart-iphone.html",
+        "category": "Troubleshooting"
+    },
+    {
+        "title": "Force Restart iPhone",
+        "description": "In this article, we will go over how to force restart your iPhone if it is unresponsive or frozen.",
+        "url": "https://support.iaccessabilityservices.com/articles/force-restart-iphone.html",
+        "category": "Troubleshooting"
+    },
+    {
+        "title": "Restart iPad",
+        "description": "In this article, we will go over how to force restart your iPad.",
+        "url": "https://support.iaccessabilityservices.com/articles/restart-ipad.html",
+        "category": "Troubleshooting"
+    },
+    {
+        "title": "Force Restart iPad",
+        "description": "In this article, we will go over how to force restart your iPad if it is unresponsive or frozen.",
+        "url": "https://support.iaccessabilityservices.com/articles/force-restart-ipad.html",
+        "category": "Troubleshooting"
+    },
+    {
+        "title": "Shutdown, Restart, or Force Restart Mac",
+        "description": "In this article, we will go over how to properly shutdown, restart, or force restart your Mac.",
+        "url": "https://support.iaccessabilityservices.com/articles/shutdown-or-restart-mac.html",
+        "category": "Troubleshooting"
+    },
+    {
+        "title": "Restart Apple Watch",
+        "description": "In this article, we will go over how to restart or force restart your Apple Watch",
+        "url": "https://support.iaccessabilityservices.com/articles/restart-apple-watch.html",
+        "category": "Troubleshooting"
+    },
+    {
+        "title": "Shutdown, Restart, or Force Restart Google Pixel Phone",
+        "description": "In this article, we will go over how to properly shutdown, restart, or force restart your Pixel smartphone.",
+        "url": "https://support.iaccessabilityservices.com/articles/shutdown-or-restart-google-pixel-phone.html",
+        "category": "Troubleshooting"
+    },
+    {
+        "title": "Getting Started with VoiceOver for iPhone, iPad, and iPod touch",
+        "description": "Learn how to setup and use VoiceOver to navigate a device by hearing content spoken aloud.",
+        "url": "https://support.iaccessabilityservices.com/articles/getting-started-with-voiceover-for-ios.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Adjust the VoiceOver Speech and Language Settings on iPhone, iPad, and iPod touch",
+        "description": "Learn how to customize the VoiceOver speech voice.",
+        "url": "https://support.iaccessabilityservices.com/articles/voiceover-speech-ios.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Use and Custmize the VoiceOver Gestures on iPhone, iPad, and iPod touch",
+        "description": "Learn how to customize the VoiceOver command gestures for device navigation.",
+        "url": "https://support.iaccessabilityservices.com/articles/voiceover-gestures.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "The Rotor for VoiceOver on iPhone, iPad, and iPod touch",
+        "description": "Learn how to setup, use, and customie the rotor for VoiceOver.",
+        "url": "https://support.iaccessabilityservices.com/articles/voiceover-rotor-ios.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Braille Screen Input for iPhone, iPad, and iPod touch with VoiceOver",
+        "description": "Learn how to setup, use, and customize Braille Screen Input for iPhone with VoiceOver.",
+        "url": "https://support.iaccessabilityservices.com/articles/braillescreeninput.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Getting Started with Zoom for iPhone, iPad, and iPod touch",
+        "description": "Learn how to setup and use zoom to magnify content.",
+        "url": "https://support.iaccessabilityservices.com/articles/getting-started-with-zoom-for-ios.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Adjust the Text Size on iPhone, iPad, and iPod touch",
+        "description": "Set the text size on your iPhone, iPad, or iPod touch to a comfortable reading size.",
+        "url": "https://support.iaccessabilityservices.com/articles/text-size-ios.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Adjust the Color Filters on iPhone, iPad, and iPod touch",
+        "description": "Setup Color Filters for color blindness, minimize distractions, or soften the screen tone.",
+        "url": "https://support.iaccessabilityservices.com/articles/display-colors-ios.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Setup and Use Spoken Content Settings on iPhone, iPad, and iPod touch",
+        "description": "Learn how to setup and use Spoken Content features to hear selected content spoken aloud.",
+        "url": "https://support.iaccessabilityservices.com/articles/spoken-content.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Accessibility Shortcut for iPhone, iPad, and iPod touch",
+        "description": "Setup and use a shortcut to quickly toggle various accessibility features.",
+        "url": "https://support.iaccessabilityservices.com/articles/accessibility-shortcut-ios.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Getting Started with Zoom for Mac",
+        "description": "Learn how to setup and use zoom to magnify content.",
+        "url": "https://support.iaccessabilityservices.com/articles/getting-started-with-zoom-for-mac.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Getting Started with Zoom for Apple Watch",
+        "description": "Learn how to setup and use zoom to magnify content.",
+        "url": "https://support.iaccessabilityservices.com/articles/getting-started-with-zoom-for-apple-watch.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Accessibility Shortcut for Apple Watch",
+        "description": "Setup and use a shortcut to quickly toggle various accessibility features.",
+        "url": "https://support.iaccessabilityservices.com/articles/accessibility-shortcut-apple-watch.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Getting Started with TalkBack on Android",
+        "description": "Learn how to setup and use VoiceOver to navigate a device by hearing content spoken aloud.",
+        "url": "https://support.iaccessabilityservices.com/articles/getting-started-with-talkback.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Adjust the TalkBack Speech and Language Settings on Android",
+        "description": "Learn how to customize the speech voice, speed, and language for TalkBack.",
+        "url": "https://support.iaccessabilityservices.com/articles/talkback-speech-android.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Use and Customize the TalkBack Gestures",
+        "description": "Learn how to customize the TalkBack command gestures for device navigation.",
+        "url": "https://support.iaccessabilityservices.com/articles/talkback-gestures.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Customize and Use the TalkBack Menu and Reading Controls",
+        "description": "Learn how to setup and use the TalkBack Menu and Reading Controls menu.",
+        "url": "https://support.iaccessabilityservices.com/articles/talkback-menu.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Setup and Use the Braille Keyboard for TalkBack on Android",
+        "description": "Learn how to setup and use the braille keyboard for Android with TalkBack",
+        "url": "https://support.iaccessabilityservices.com/articles/braille-keyboard-android.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Getting Started with Magnification for Android",
+        "description": "Learn how to setup and use zoom to magnify content.",
+        "url": "https://support.iaccessabilityservices.com/articles/getting-started-with-magnification-for-android.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Adjust the Text Size on Android",
+        "description": "Set the text size on your Android device to a comfortable reading size.",
+        "url": "https://support.iaccessabilityservices.com/articles/text-size-android.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Adjust the Color Filters on Android",
+        "description": "Setup Color Filters for color blindness, minimize distractions, or soften the screen tone.",
+        "url": "https://support.iaccessabilityservices.com/articles/Adjust the Color Filters on Android",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Setup and Use Select to Speak on Android",
+        "description": "Learn how to setup and use Select to Speak to hear selected content spoken aloud.",
+        "url": "https://support.iaccessabilityservices.com/articles/select-to-speak-android.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Dark Mode for iPhone, iPad, and iPod touch",
+        "description": "Setup and use Dark Mode",
+        "url": "https://support.iaccessabilityservices.com/articles/dark-mode-ios.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Customize Control Center on iPhone and iPad",
+        "description": "Learn how to setup Control Center with controls you use and need at any time.",
+        "url": "https://support.iaccessabilityservices.com/articles/control-center-ios.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Set a Custom Ringtone and Text Tone on Your iPhone, iPad, and iPod touch",
+        "description": "Learn how to set a unique ringtone or text tone.",
+        "url": "https://support.iaccessabilityservices.com/articles/custom-ringtone-ios.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Dark Theme for Android",
+        "description": "Setup and use Dark Theme",
+        "url": "https://support.iaccessabilityservices.com/articles/dark-theme-android.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Customize the Quick Settings Panel on Android",
+        "description": "Learn how to setup the Quick Settings panel with controls you use and need at any time.",
+        "url": "https://support.iaccessabilityservices.com/articles/quick-settings-panel-android.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "Set a Custom Ringtone and Text Tone on Your Android Device",
+        "description": "Learn how to set a unique ringtone or text tone.",
+        "url": "https://support.iaccessabilityservices.com/articles/custom-ringtone-android.html",
+        "category": "Accessibility Features"
+    },
+    {
+        "title": "How to Create a Free Apple Account",
+        "description": "Learn how to create an Apple Account",
+        "url": "https://support.iaccessabilityservices.com/articles/create-apple-account.html",
+        "category": "Account Management"
+    },
+    {
+        "title": "If You Forget Your Apple Account Primary Email Address or Phone Number",
+        "description": "Learn how to gain access to your Apple Account if you forgot the primary email address or phone number tied to it.",
+        "url": "https://support.iaccessabilityservices.com/articles/forgot-apple-account.html",
+        "category": "Account Management"
+    },
+    {
+        "title": "If You Forget Your Apple Account Password",
+        "description": "Learn how to reset your Apple Account password if you forgot it.",
+        "url": "https://support.iaccessabilityservices.com/articles/forgot-apple-account-password.html",
+        "category": "Account Management"
+    },
+    {
+        "title": "What to do if Your Apple Account is Locked, Disabled, or Deactivated",
+        "description": "Learn how to reactivate and unlock your Apple Account if it is locked, disabled, or deactivated.",
+        "url": "https://support.iaccessabilityservices.com/articles/locked-apple-account.html",
+        "category": "Account Management"
+    },
+    {
+        "title": "How to Create a Free Google Account",
+        "description": "Learn how to create a Google Account",
+        "url": "https://support.iaccessabilityservices.com/articles/create-google-account.html",
+        "category": "Account Management"
+    },
+    {
+        "title": "How to Create a Free Samsung Account",
+        "description": "Learn how to create a Samsung Account",
+        "url": "https://support.iaccessabilityservices.com/articles/create-samsung-account.html",
+        "category": "Account Management"
+    }
+]

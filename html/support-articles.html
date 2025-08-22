@@ -63,9 +63,6 @@
                     <li><a href="https://iaccessabilityservices.com/html/about.html" tabindex="-1">About</a></li>
                     <li><a href="https://iaccessabilityservices.com/html/connect.html" tabindex="-1">Connect</a></li>
                 </ul>
-                <!-- Search -->
-                <input type="text" id="search" placeholder="Search articles..." style="display: none;">
-                <ul id="results"></ul>
             </nav>
             <!-- PWA Navigation -->
             <nav id="pwa-navbar" style="display: none;">
@@ -76,13 +73,19 @@
                         <a href="https://support.iaccessabilityservices.com/html/support-articles.html" aria-label="Home"><img class="link-logo" src="https://iaccessabilityservices.com/img/logo-colored.svg" alt="I Access Ability"></a>
                         <a href="https://support.iaccessabilityservices.com/html/support-articles.html" class="links"><h1 class="name" aria-label="I Access Ability">iAccessAbility</h1></a>
                     </div>
+                    <!-- Search -->
+                    <button class="search" onclick="toggleSearch()"><span style="display: block; transform: rotate(-45deg); justify-content: center; margin: auto; margin-top: 2px; padding: auto;">&#9906;</span></button>
                 </div>
                 <!-- Desktop Navigation -->
                 <ul class="desktop-nav">
                     <li><a href="https://support.iaccessabilityservices.com/html/support-articles.html"><img class="link-logo" src="https://iaccessabilityservices.com/img/logo-colored.svg" alt="I Access Ability"></a></li>
                     <li><a href="https://support.iaccessabilityservices.com/html/support-articles.html">Support Articles</a></li>
+                    <li><button class="search" onclick="toggleSearch()"><span style="display: block; transform: rotate(-45deg); justify-content: center; margin: auto; margin-top: 2px; padding: auto;">&#9906;</span></button></li>
                 </ul>
             </nav>
+            <!-- Search -->
+            <input type="text" id="search" placeholder="Search articles..." style="display: none;">
+            <ul id="results"></ul>
         </div>
         <!-- Support Articles Page -->
         <div class="site">

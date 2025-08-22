@@ -133,7 +133,8 @@ const FILES_TO_CACHE = [
   'https://support.iaccessabilityservices.com/media/images/pixel-color-inversion-light.PNG',
   'https://support.iaccessabilityservices.com/media/images/galaxy-edit-quick-settings-dark.jpg',
   'https://support.iaccessabilityservices.com/media/videos/install-ringtone-google-pixel.mp4',
-  'https://support.iaccessabilityservices.com/media/videos/install-text-tone-google-pixel.mp4'
+  'https://support.iaccessabilityservices.com/media/videos/install-text-tone-google-pixel.mp4',
+  'https://support.iaccessabilityservices.com/articles.json'
 ];
 
 // Install and cache files

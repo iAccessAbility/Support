@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="https://support.iaccessabilityservices.com/stylesheets/support-articles.css">
         <link rel="stylesheet" href="https://iaccessabilityservices.com/stylesheets/accessibility.css">
         <link rel="stylesheet" href="https://iaccessabilityservices.com/navbar/navbar.css">
+        <link rel="stylesheet" href="../stylesheets/article-search.css">
         <link rel="manifest" href="https://iaccessabilityservices.com/manifest.json">
     </head>
     <body>
@@ -29,13 +30,17 @@
                         <a href="https://iaccessabilityservices.com" aria-label="Home"><img class="link-logo" src="https://iaccessabilityservices.com/img/logo-colored.svg" alt="I Access Ability"></a>
                         <a href="https://iaccessabilityservices.com" class="links"><h1 class="name" aria-label="I Access Ability">iAccessAbility</h1></a>
                     </div>
-                    <!-- Mobile Menu Toggle Button -->
-                    <button class="menu-toggle" aria-expanded="false" aria-label="Toggle menu">
-                        <span class="menu-icon-container">
-                            <span class="menu-line"></span>
-                            <span class="menu-line"></span>
-                        </span>
+                    <div style="display: flex;">
+                        <!-- Search -->
+                        <button class="search" onclick="toggleSearch()"><span style="display: block; transform: rotate(-45deg); justify-content: center; margin: auto; margin-top: 2px; padding: auto;">&#9906;</span></button>
+                        <!-- Mobile Menu Toggle Button -->
+                        <button class="menu-toggle" aria-expanded="false" aria-label="Toggle menu">
+                            <span class="menu-icon-container">
+                                <span class="menu-line"></span>
+                                <span class="menu-line"></span>
+                            </span>
                     </button>
+                    </div>
                 </div>
                 <!-- Desktop Navigation -->
                 <ul class="desktop-nav">
@@ -46,6 +51,7 @@
                     <li><a href="https://support.iaccessabilityservices.com">Support</a></li>
                     <li><a href="https://iaccessabilityservices.com/html/about.html">About</a></li>
                     <li><a href="https://iaccessabilityservices.com/html/connect.html">Connect</a></li>
+                    <li><button class="search" onclick="toggleSearch()"><span style="display: block; transform: rotate(-45deg); justify-content: center; margin: auto; margin-top: 2px; padding: auto;">&#9906;</span></button></li>
                 </ul>
                 <!-- Mobile Navigation (initially hidden) -->
                 <ul id="mobile-menu" class="mobile-nav" aria-hidden="true">
@@ -57,6 +63,9 @@
                     <li><a href="https://iaccessabilityservices.com/html/about.html" tabindex="-1">About</a></li>
                     <li><a href="https://iaccessabilityservices.com/html/connect.html" tabindex="-1">Connect</a></li>
                 </ul>
+                <!-- Search -->
+                <input type="text" id="search" placeholder="Search articles..." style="display: none;">
+                <ul id="results"></ul>
             </nav>
             <!-- PWA Navigation -->
             <nav id="pwa-navbar" style="display: none;">
@@ -80,11 +89,6 @@
             <!-- title -->
             <h1>Support Articles</h1>
             <h2>Find answers to common questions and issues in our suppport articles.</h2>
-            <!-- Search -->
-            <div class="search-container">
-                <input type="text" id="search" placeholder="Search articles...">
-                <ul id="results"></ul>
-            </div>
             <!-- Troubleshooting -->
             <h3>Troubleshooting</h3>
             <!-- iOS -->
@@ -183,27 +187,36 @@
         <script src="https://iaccessabilityservices.com/javascript/pwa.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
         <script>
+            function toggleSearch() {
+                const searchInput = document.getElementById("search");
+                if (searchInput.style.display === "none" || searchInput.style.display === "") {
+                    searchInput.style.display = "block";
+                    searchInput.focus();
+                } else {
+                    searchInput.style.display = "none";
+                }
+            }
+        </script>
+        <script>
             fetch('../articles.json')
-                .then(res => res.json())
-                .then(data => {
-                    const options = {
-                        keys: ['title', 'category', 'description'],
-                        threshold: 0.3
-                    };
-                    const fuse = new Fuse(data, options);
-                    const input = document.getElementById('search');
-                    const resultsList = document.getElementById('results');
-                    resultsList.style.display = "none";
-
-                    input.addEventListener('input', () => {
-                        const query = input.value.trim();
-                        const results = fuse.search(query);
-
-                        resultsList.innerHTML = '';
-
-                        if (results.length > 0 && query !== "") {
-                            resultsList.style.display = "block";
-                            results.slice(0, 5).forEach(result => {
+            .then(res => res.json())
+            .then(data => {
+                const options = {
+                    keys: ['title', 'category', 'description'],
+                    threshold: 0.3
+                };
+                const fuse = new Fuse(data, options);
+                const input = document.getElementById('search');
+                const resultsList = document.getElementById('results');
+                const site = document.querySelector('.site');
+                input.addEventListener('input', () => {
+                    const query = input.value.trim();
+                    const results = fuse.search(query);
+                    resultsList.innerHTML = '';
+                    if (results.length > 0 && query !== "") {
+                        resultsList.style.display = "block";
+                        site.classList.add("results-open", "site");
+                        results.slice(0, 5).forEach(result => {
                             const li = document.createElement('li');
                             li.innerHTML = `
                                 <a href="${result.item.url}">
@@ -215,6 +228,7 @@
                         });
                     } else {
                         resultsList.style.display = "none";
+                        site.classList.remove("results-open");
                     }
                 });
             });

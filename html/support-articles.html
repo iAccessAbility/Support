@@ -192,11 +192,17 @@
         <script>
             function toggleSearch() {
                 const searchInput = document.getElementById("search");
+                const results = document.getElementById("results");
+                const site = document.querySelector('.site');
                 if (searchInput.style.display === "none" || searchInput.style.display === "") {
                     searchInput.style.display = "block";
                     searchInput.focus();
+                    results.style.display = "block";
+                    site.classList.add("results-open", "site");
                 } else {
                     searchInput.style.display = "none";
+                    results.style.display = "none";
+                    site.classList.remove("results-open");
                 }
             }
         </script>
@@ -218,6 +224,7 @@
                     resultsList.innerHTML = '';
                     if (results.length > 0 && query !== "") {
                         resultsList.style.display = "block";
+                        resultsList.style.padding = "10px";
                         site.classList.add("results-open", "site");
                         results.slice(0, 5).forEach(result => {
                             const li = document.createElement('li');

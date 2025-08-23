@@ -190,10 +190,11 @@
         <script src="https://iaccessabilityservices.com/javascript/pwa.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
         <script>
+            const toggleButton = document.getElementsByClassName("search");
+            const searchInput = document.getElementById("search");
+            const results = document.getElementById("results");
+            const site = document.querySelector('.site');
             function toggleSearch() {
-                const searchInput = document.getElementById("search");
-                const results = document.getElementById("results");
-                const site = document.querySelector('.site');
                 if (searchInput.style.display === "none" || searchInput.style.display === "") {
                     searchInput.style.display = "block";
                     searchInput.focus();
@@ -205,8 +206,6 @@
                     site.classList.remove("results-open");
                 }
             }
-        </script>
-        <script>
             fetch('../articles.json')
             .then(res => res.json())
             .then(data => {
@@ -241,6 +240,11 @@
                         site.classList.remove("results-open");
                     }
                 });
+            });
+            window.addEventListener("scroll", () => {
+                if (searchInput.style.display === "block") {
+                    toggleSearch();
+                }
             });
         </script>
     </body>

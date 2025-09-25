@@ -104,7 +104,7 @@
                     <div class="form-row">
                         <label>Communication Preference&#58;</label>
                         <select name="Communication" id="communicationType" required tabindex="0">
-                            <option selected disabled>Select</option>
+                            <option selected disabled>Select a Method to Communicate</option>
                             <option value="SMS" tabindex="0">Direct Text</option>
                             <option value="call" tabindex="0">Phone Call</option>
                             <option value="email" tabindex="0">Email</option>
@@ -112,6 +112,28 @@
                             <option value="WhatsApp Call" tabindex="0">WhatsApp Call</option>
                             <option value="Telegram Text" tabindex="0">Telegram Text</option>
                         </select>
+                    </div>
+                    <div class="form-row">
+                        <label>Time Zone&#58;</label>
+                        <select name="Time Zone" id="timeZone" required tabindex="0">
+                            <option selected disabled>Select Your Time Zone</option>
+                            <option value="Pacific" tabindex="0">Pacific Time &#40;PT&#41;</option>
+                            <option value="Mountain" tabindex="0">Mountain Time &#40;MT&#41;</option>
+                            <option value="Central" tabindex="0">Central Time &#40;CT&#41;</option>
+                            <option value="Eastern" tabindex="0">Eastern Time &#40;ET&#41;</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label>Payment Method&#58;</label>
+                        <select name="Payment Method" id="paymentMethod" required tabindex="0">
+                            <option selected disabled>Select a Payment Method</option>
+                            <option value="Venmo" tabindex="0">Venmo</option>
+                            <option value="PayPal" tabindex="0">PayPal</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label>Username&#58;</label>
+                        <input type="text" name="Username" id="username" placeholder="@johnappleseed" tabindex="0">
                     </div>
                     <div class="form-row">
                         <div class="agree-section">

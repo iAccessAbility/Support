@@ -1,7 +1,5 @@
 User-agent: *
 Disallow: 404.html
-Disallow: /html/services.html
-Disallow: /html/services-form.html
 Allow: /
 
 Sitemap: https://support.iaccessabilityservices.com/sitemap.xml

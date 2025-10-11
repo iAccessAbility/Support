@@ -29,6 +29,7 @@ const FILES_TO_CACHE = [
   'https://support.iaccessabilityservices.com/articles/forgot-apple-account.html',
   'https://support.iaccessabilityservices.com/articles/shutdown-or-restart-google-pixel-phone.html',
   'https://support.iaccessabilityservices.com/articles/restart-ipad.html',
+  'https://support.iaccessabilityservices.com/articles/reset.html',
   'https://support.iaccessabilityservices.com/articles/force-restart-iphone.html',
   'https://support.iaccessabilityservices.com/articles/voiceover-gestures.html',
   'https://support.iaccessabilityservices.com/articles/spoken-content.html',
@@ -44,7 +45,6 @@ const FILES_TO_CACHE = [
   'https://support.iaccessabilityservices.com/stylesheets/support-articles.css',
   'https://support.iaccessabilityservices.com/javascripts/pwa.js',
   'https://iaccessabilityservices.com/img/logo-colored.svg',
-  // media
   'https://support.iaccessabilityservices.com/media/images/remove-a-control.png',
   'https://support.iaccessabilityservices.com/media/images/edit-controls-ios-17-light.jpg',
   'https://support.iaccessabilityservices.com/media/images/add-a-control.png',

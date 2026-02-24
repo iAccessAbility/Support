@@ -133,6 +133,18 @@
         <priority>1.0</priority>
     </url>
     <url>
+       <loc>https://support.iaccessabilityservices.com/articles/guided-access-ios.html</loc>
+           <lastmod>2026-02-24</lastmod>
+            <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+       <loc>https://support.iaccessabilityservices.com/articles/screen-time-ios.html</loc>
+           <lastmod>2026-02-24</lastmod>
+            <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
        <loc>https://support.iaccessabilityservices.com/articles/talkback-gestures.html</loc>
            <lastmod>2026-02-24</lastmod>
             <changefreq>monthly</changefreq>
